@@ -8,7 +8,7 @@ int duplicate(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         bool is_duplicate = false;
         // Compare current element with all previous unique elements
-        for (int k = 0; k < j; k++) {
+        for (int k = 0; k < i; k++) {
             if (arr[k] == arr[i]) {
                 // If element is a duplicate, mark it as such and exit the loop
                 is_duplicate = true;
